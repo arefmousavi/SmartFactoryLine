@@ -8,14 +8,15 @@
   <br><br>
 </p>
 
+
 ## 🎯 Overview  
-This project simulates a fully automated smart factory line using **Factory IO** and **Siemens PLCs**, strictly adhering to modern industrial automation principles. The production system is modular, adaptive, and equipped with a custom **HMI built in Ignition Platform**, communicating through the **OPC DA** protocol.
+This project simulates a fully automated smart factory line using **Factory IO** and a **Siemens PLC**, strictly adhering to modern industrial automation principles. The production system is modular, adaptive, and equipped with a custom **HMI built in Ignition Platform**, communicating through the **OPC DA** protocol.
+
 
 ## 🎥 Demo Video  
 Watch a time-lapse demo of the system, showing the Factory IO plant and HMI interface side by side:  
 [🔗 Watch the Video](https://www.youtube.com/watch?v=jPaWf-pehfE)
 
----
 
 ## ⚙️ System Architecture  
 
@@ -23,7 +24,7 @@ Watch a time-lapse demo of the system, showing the Factory IO plant and HMI inte
 - Developed using **Ladder Programming**
 - Each module (e.g., sorting, assembly, boxing) coded independently
 - A central **System Manager** coordinates all modules
-- I/O used: 39 DI, 43 DQ, 10 AI, and 23 AQ (115 in total)
+- I/O used: 39 DI, 43 DQ, 10 AI, and 23 AQ (**115 in total**)
 
 ### Simulated Plant (Factory IO)
 - **8 Robotic Arms**:
@@ -37,23 +38,9 @@ Watch a time-lapse demo of the system, showing the Factory IO plant and HMI inte
   - Final boxed blue products are stored in a warehouse with a capacity of up to **54 boxes**
 - **Continuous Water Tank**:
   - Controlled via **IMC (Internal Model Control)** strategy
-  - Includes manual valve control, level setpoint input, high/low level alarms, and auto-recovery functionality
+  - Includes manual valve control, level setpoint, high/low level alarms, and auto-recovery functionality
 
-### Production Workflow
-- **Three types** of raw materials: Green, Blue, Gray (randomly introduced)
-- **Sorting**: Gray materials are discarded, Blue and Green are directed to their respective lines
-- **Manufacturing**:
-  - Lid and base are produced
-  - Assembled into final products
-  - Grouped into boxes (3 per box)
-- **Dispatching**:
-  - Green products are shipped
-  - Blue products are stored
-- The system is **adaptive** and regulates raw material input based on the current load
-
----
-
-## 🖥️ HMI Features (Ignition Platform)
+### OPC-enabled HMI (Ignition Platform)
 - Developed using:
   - **Ignition Server** – hosts the project and manages device communication
   - **Designer Launcher** – used to design the HMI via the Vision Module
@@ -67,18 +54,28 @@ Watch a time-lapse demo of the system, showing the Factory IO plant and HMI inte
   - **Manual control** of tank inlet/outlet valves
   - Live counters of inputs/outputs per module
   - Status of in-process boxes and storage space
-  - **Alarms** for high/low tank levels with **automatic override**
-
+  - **Alarms** for high/low tank levels with **automatic override** mechanism that returns the tank to safe operating levels
 - Tags used in HMI: **37**
 
----
+
+## 🔄 Production Workflow
+- **Three types** of raw materials: Green, Blue, Gray (randomly introduced)
+- **Sorting**: Gray materials are discarded, Blue and Green are directed to their respective lines
+- **Manufacturing**:
+  - Lid and base are produced
+  - Assembled into final products
+  - Grouped into boxes (3 per box)
+- **Dispatching**:
+  - Green products are shipped
+  - Blue products are stored
+- The system is **adaptive** and regulates raw material input based on the current load
+
 
 ## 📁 Documentation & Resources
-- 📄 [Ladder Logic PDF Files](./TIA Portal PLC Code/Code PDF)
-- 📄 [I/O Configuration & Tag Descriptions](./TIA Portal PLC Code/Tags PDF)
-- 📄 [OPC Tags](./KEPServerEX OPC Server/tags.csv)
+- 📄 [Ladder Logic PDF Files](TIA_Portal_PLC_Code/CodePDF)
+- 📄 [I/O Configuration & Tag Descriptions](TIA_Portal_PLC_Code/TagsPDF)
+- 📄 [OPC Tags](KEPServerEX_OPC_Server/tags.csv)
 
----
 
 ## 💻 Software Stack  
 
@@ -92,19 +89,17 @@ Watch a time-lapse demo of the system, showing the Factory IO plant and HMI inte
 | KEPServerEX      | v6.6        |
 | Ignition Platform| v8.1.48     |
 
----
 
 ## 🚀 How to Run the System
 
 1. **Launch TIA Portal**, load the project, and start simulation using **PLCSim**
 2. Open **Factory IO** and connect it to **PLCSim**
-3. Start **NetToPLCsim** and bind it to a pre-configured loopback IP  
+3. Start **NetToPLCsim** and bind it to a pre-configured loopback network adapter  
    - Example: `10.0.0.40` for PLC, `10.0.0.50` for NetToPLCsim (same subnet)
 4. Run **KEPServerEX** and ensure OPC tags are receiving data from the PLC
 5. Start **Ignition Server**, configure OPC connections, and import tag structure
 6. Launch the HMI with **Vision Client Launcher**
 
----
 
 ## 📌 Notes
 - This project simulates a fully functional **smart factory** with **modular, adaptive automation**
