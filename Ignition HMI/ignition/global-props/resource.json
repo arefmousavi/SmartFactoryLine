@@ -1,0 +1,16 @@
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModificationSignature": "d71851c1f827133ae029039144ee78554380d4447d9cdf071a8ff13e35277421",
+    "lastModification": {
+      "actor": "ArefMousavi",
+      "timestamp": "2025-06-11T11:15:13Z"
+    }
+  }
+}
