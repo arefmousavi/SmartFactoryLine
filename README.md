@@ -95,7 +95,7 @@ Watch a time-lapse demo of the system, showing the Factory IO plant and HMI inte
 1. **Launch TIA Portal**, load the project, and start simulation using **PLCSim**
 2. Open **Factory IO** and connect it to **PLCSim**
 3. Start **NetToPLCsim** and bind it to a pre-configured loopback network adapter  
-   - Example: `10.0.0.40` for PLC, `10.0.0.50` for NetToPLCsim (same subnet)
+   - Example: `10.0.0.40` for PLC, `10.0.0.50` for loopback adapter (same subnet)
 4. Run **KEPServerEX** and ensure OPC tags are receiving data from the PLC
 5. Start **Ignition Server**, configure OPC connections, and import tag structure
 6. Launch the HMI with **Vision Client Launcher**
