@@ -54,7 +54,7 @@ Watch a time-lapse demo of the system, showing the Factory IO plant and HMI inte
   - **Manual control** of tank inlet/outlet valves
   - Live counters of inputs/outputs per module
   - Status of in-process boxes and storage space
-  - **Alarms** for high/low tank levels with **automatic override** mechanism that returns the tank to safe operating levels
+  - **Alarms** for high/low tank levels with **automatic override** that returns the tank to safe operating levels
 - Tags used in HMI: **37**
 
 
