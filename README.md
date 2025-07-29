@@ -9,7 +9,7 @@
 </p>
 
 ## 🎯 Overview  
-his project simulates a fully automated smart factory line using **Factory IO** and **Siemens PLCs**, strictly adhering to modern industrial automation principles. The production system is modular, adaptive, and equipped with a custom **HMI built in Ignition Platform**, communicating through the **OPC DA** protocol.
+This project simulates a fully automated smart factory line using **Factory IO** and **Siemens PLCs**, strictly adhering to modern industrial automation principles. The production system is modular, adaptive, and equipped with a custom **HMI built in Ignition Platform**, communicating through the **OPC DA** protocol.
 
 ## 🎥 Demo Video  
 Watch a time-lapse demo of the system, showing the Factory IO plant and HMI interface side by side:  
