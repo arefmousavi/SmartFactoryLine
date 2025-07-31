@@ -105,4 +105,3 @@ Watch a time-lapse demo of the system, showing the Factory IO plant and HMI inte
 - This project simulates a fully functional **smart factory** with **modular, adaptive automation**
 - The entire system runs **autonomously**, from raw material entry to product dispatch
 - Designed to mimic **real-world industrial setups** using widely used industrial protocols such as OPC DA
----
