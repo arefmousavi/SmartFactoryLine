@@ -90,7 +90,7 @@ Watch a time-lapse demo of the system, showing the Factory IO plant and HMI inte
 | Ignition Platform| v8.1.48     |
 
 
-## 🚀 How to Run the System
+## 🚀 How to Run
 
 1. **Launch TIA Portal**, load the project, and start simulation using **PLCSim**
 2. Open **Factory IO** and connect it to **PLCSim**
