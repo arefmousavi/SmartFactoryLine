@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
-  <img src="images/plant_and_HMI.png" alt="plant and HMI picture" style="max-width: 100%; height: auto;" />
+  <img src="images/plant_and_HMI.jpeg" alt="plant and HMI picture" style="max-width: 100%; height: auto;" />
   <em>Smart factory simulation using Factory I/O (left) and Ignition HMI (right)</em>
   <br><br>
 </p>
@@ -15,7 +15,7 @@ This project simulates a fully automated smart factory line using **Factory IO**
 
 ## 🎥 Demo Video  
 Watch a time-lapse demo of the system, showing the Factory IO plant and HMI interface side by side:  
-[🔗 Watch the Video](https://www.youtube.com/watch?v=jPaWf-pehfE)
+[🔗 Watch the Video](https://www.youtube.com/watch?v=QUV9gWB61qc)
 
 
 ## ⚙️ System Architecture  
