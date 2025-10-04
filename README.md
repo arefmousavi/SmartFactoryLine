@@ -15,7 +15,7 @@ This project simulates a fully automated smart factory line using **Factory IO**
 
 ## 🎥 Demo Video  
 Watch a time-lapse demo of the system, showing the Factory IO plant and HMI interface side by side:  
-[🔗 Watch the Video](https://www.youtube.com/watch?v=QUV9gWB61qc)
+[🔗 Watch the Video](https://www.youtube.com/watch?v=dwymTPK_dQE)
 
 
 ## ⚙️ System Architecture  
